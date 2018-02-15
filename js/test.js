@@ -17,17 +17,45 @@ function test(v)
     //     console.log("Value of res is false");
     // }
 
-    // console.log("Value of option selected "+ document.getElementById("optvalue").value);
-    // document.getElementById("txtval").value = document.getElementById("optvalue").value;
-   // document.getElementById("txtval").style.color="red";   
-   for (var i = 0; i < v; i++) {
+     console.log("Value of option selected "+ document.getElementById("optvalue").value);
+     document.getElementById("txtval").value = document.getElementById("optvalue").value;
+    document.getElementById("txtval").style.color="red";   
+   for (var i = 0; i < v; i++) 
+   {
     setTimeout(60000);
     document.getElementById("pid").style.color="red";
-    //document.getElementById("pid").style.color="black";
+    document.getElementById("pid").style.color="black";
   }
 }
 
 function test2(i,j)
 {
     console.log("Value of i & j are "+i+" "+j);
+}
+
+function test3(j)
+{
+    //in javascript variable can be a function
+    var x = ()=>
+    {
+        var val =  document.getElementById("pid").innerText;
+        document.getElementById("pid").innerText = val+" j is "+j;
+        
+    }
+
+    x();
+}
+
+//function as parameter to another function
+// function goodthing(function val())
+
+
+
+function displayNames()
+{
+    var names =['Pritha', 'Avijit','Gopal'];
+    names.forEach(function pickNames(name,pos) 
+    {
+        console.log("Name is "+name+" at position "+pos)
+    })
 }
