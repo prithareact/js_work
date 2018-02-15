@@ -1,0 +1,12 @@
+To clone project from bitbucket:
+git clone https://repo_pritha@bitbucket.org/repo_pritha/javascriptwork.git
+
+What are events?
+1. onload
+2. onclick
+3. onmouseover
+
+
+To add remote:
+git remote add origin https://github.com/repo_pritha/javascriptwork.git
+<input type="text" id="txtval">
