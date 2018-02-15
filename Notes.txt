@@ -10,3 +10,5 @@ What are events?
 To add remote:
 git remote add origin https://github.com/repo_pritha/javascriptwork.git
 <input type="text" id="txtval">
+
+Some modifications. 
